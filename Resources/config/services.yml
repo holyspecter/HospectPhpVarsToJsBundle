@@ -1,6 +1,6 @@
 parameters:
     php_to_js.class: Laracasts\Utilities\JavaScript\PHPToJavaScriptTransformer
-    hospect.caching_view_binder.class: Hospect\PhpVarsToJsBundle\CachingViewBinder
+    hospect.caching_view_binder.class: Hospect\PhpVarsToJsBundle\ViewBinder\CachingViewBinder
 
 services:
     php_to_js:
