@@ -10,11 +10,13 @@ services:
             - @hospect.caching_view_binder
             - %hospect_php_to_js.namespace%
 
+    hospect.js_extension:
+        class: %hospect.js_extension.class%
+        arguments:
+            - @hospect.caching_view_binder
+        tags:
+            - { name: twig.extension }
+
     hospect.caching_view_binder:
         class: %hospect.caching_view_binder.class%
         public: false
-
-    hospect.js_extension:
-        class: %hospect.js_extension.class%
-        tags:
-            - { name: twig.extension }
