@@ -1,6 +1,7 @@
 parameters:
     php_to_js.class: Laracasts\Utilities\JavaScript\PHPToJavaScriptTransformer
     hospect.caching_view_binder.class: Hospect\PhpVarsToJsBundle\ViewBinder\CachingViewBinder
+    hospect.js_extension.class: Hospect\PhpVarsToJsBundle\Twig\JavaScriptExtension
 
 services:
     php_to_js:
@@ -12,3 +13,8 @@ services:
     hospect.caching_view_binder:
         class: %hospect.caching_view_binder.class%
         public: false
+
+    hospect.js_extension:
+        class: %hospect.js_extension.class%
+        tags:
+            - { name: twig.extension }
