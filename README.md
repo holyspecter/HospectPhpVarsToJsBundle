@@ -39,7 +39,7 @@ $this->get('php_to_js')->put([
 ```
 Then in your template (probably that will be useful to move it to layout):
 ```
-    <script>
-        {{ initPhpVars() | raw }}
-    </script>
+<script>
+    {{ initPhpVars() | raw }}
+</script>
 ```
