@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/holyspecter/HospectPhpVarsToJsBundle.svg?branch=master)](https://travis-ci.org/holyspecter/HospectPhpVarsToJsBundle)
+
 ### Description
 
 Bundle allows you to avoid horrible statements in Twig templates while setting JS variables from PHP ones, like:
