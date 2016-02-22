@@ -23,7 +23,7 @@ class JavaScriptExtension extends \Twig_Extension
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('initPhpVars', [$this, 'initPhpVars']),
+            new \Twig_SimpleFunction('initPhpVars', [$this, 'initPhpVars'], ['is_safe' => ['html']]),
         ];
     }
 

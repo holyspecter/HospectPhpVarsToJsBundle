@@ -45,6 +45,6 @@ $this->get('php_to_js')->put([
 Then in Twig template (probably that will be useful to move it to layout):
 ```html
 <script>
-    {{ initPhpVars() | raw }}
+    {{ initPhpVars() }}
 </script>
 ```
