@@ -1,11 +1,12 @@
 [![Build Status](https://travis-ci.org/holyspecter/HospectPhpVarsToJsBundle.svg?branch=master)](https://travis-ci.org/holyspecter/HospectPhpVarsToJsBundle)
 
+
 ### Description
 
 Bundle allows you to avoid horrible statements in Twig templates while setting JS variables from PHP ones, like:
-```
-    var someJsVar = '{{ somePhpVar }}',
-        anotherJsVar = '{{ anotherPhpVar }}';
+```js
+var someJsVar = '{{ somePhpVar }}',
+    anotherJsVar = '{{ anotherPhpVar }}';
 ```
 
 
@@ -15,8 +16,9 @@ Simply require it with composer:
 ```bash
 composer require hospect/php-vars-to-js-bundle
 ```
+
 And register in your `AppKernel.php`:
-```
+```php
 public function registerBundles()
 {
     $bundles = array(
@@ -41,7 +43,7 @@ $this->get('php_to_js')->put([
 ```
 
 Then in Twig template (probably that will be useful to move it to layout):
-```
+```html
 <script>
     {{ initPhpVars() | raw }}
 </script>
