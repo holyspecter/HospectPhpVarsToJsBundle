@@ -1,6 +1,7 @@
 {
     "name": "hospect/php-vars-to-js-bundle",
     "description": "Transformation of PHP vars to JS for Symfony2 with Twig",
+    "license": "MIT",
     "require": {
         "laracasts/utilities": "~2.0",
         "twig/twig": ">=1.16",
