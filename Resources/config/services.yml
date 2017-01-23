@@ -5,18 +5,18 @@ parameters:
 
 services:
     php_to_js:
-        class: %php_to_js.class%
+        class: "%php_to_js.class%"
         arguments:
-            - @hospect.caching_view_binder
-            - %hospect_php_to_js.namespace%
+            - "@hospect.caching_view_binder"
+            - "%hospect_php_to_js.namespace%"
 
     hospect.js_extension:
-        class: %hospect.js_extension.class%
+        class: "%hospect.js_extension.class%"
         arguments:
-            - @hospect.caching_view_binder
+            - "@hospect.caching_view_binder"
         tags:
             - { name: twig.extension }
 
     hospect.caching_view_binder:
-        class: %hospect.caching_view_binder.class%
+        class: "%hospect.caching_view_binder.class%"
         public: false
