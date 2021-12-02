@@ -4,7 +4,7 @@
     "description": "Transformation of PHP vars to JS for Symfony2 with Twig",
     "license": "MIT",
     "require": {
-        "laracasts/utilities": "~2.0",
+        "laracasts/utilities": "~2.0|~3.0",
         "twig/twig": ">=1.16",
         "symfony/framework-bundle": ">=2.3"
     },
