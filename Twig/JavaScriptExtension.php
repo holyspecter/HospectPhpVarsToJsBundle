@@ -3,8 +3,10 @@
 namespace Hospect\PhpVarsToJsBundle\Twig;
 
 use Hospect\PhpVarsToJsBundle\ViewBinder\CachingViewBinder;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 
-class JavaScriptExtension extends \Twig_Extension
+class JavaScriptExtension extends AbstractExtension
 {
     /** @var  CachingViewBinder */
     private $viewBinder;
@@ -23,7 +25,7 @@ class JavaScriptExtension extends \Twig_Extension
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction('initPhpVars', [$this, 'initPhpVars'], ['is_safe' => ['html']]),
+            new TwigFunction('initPhpVars', [$this, 'initPhpVars'], ['is_safe' => ['html']]),
         ];
     }
 
