@@ -17,8 +17,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('hospect_php_to_js');
+        $treeBuilder = new TreeBuilder('hospect_php_to_js');
+        $rootNode = $treeBuilder->getRootNode();
 
         $rootNode
             ->children()
